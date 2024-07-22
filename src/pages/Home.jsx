@@ -100,7 +100,7 @@ const Home = () => {
                         <h4><span className="resalt">2.</span> Verás las tarjetas:</h4>
                         <p>Cada tarea tendrá su propia tarjeta, con información detallada como título, descripción, responsables y fecha límite.</p>
                     </div>
-                    <div>
+                    <div className="comments">
                         <h4><span className="resalt">3.</span> ¡Comunica y participa!:</h4>
                         <p>Puedes comentar en las tarjetas, adjuntar archivos, hacer preguntas y seguir el progreso del proyecto en tiempo real.</p>
                     </div>

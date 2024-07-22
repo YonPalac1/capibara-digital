@@ -274,6 +274,7 @@ header .link_to_talk:hover {
     background-color: var(--color-two);
     padding: 2rem;
     margin-top: 2rem;
+    position: relative;
 }
 .sketch .trello_cards .trello_card h3 {
     font-size: 1.5rem;

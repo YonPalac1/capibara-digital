@@ -74,7 +74,7 @@ const App = () => {
                         </g>
                     </svg>
                     <a href="mailto:capibara-digital@gmail.com" target="_blank">
-                        milangadev@gmail.com
+                        capibaradigital.dev@gmail.com
                     </a>
                 </div>
                 <div className="social">
@@ -96,7 +96,7 @@ const App = () => {
             </section>
 
             <footer className="container footer">
-                <p>Copyright @ 2024 Milanga Digital. All right reserved</p>
+                <p>Copyright @ 2024 Capibara Digital. All right reserved</p>
             </footer>
         </BrowserRouter>
 
