@@ -1,0 +1,634 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: poppins;
+    src: url('./fonts/Poppins/Poppins-Bold.ttf')
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('./fonts/montserrat/Montserrat-Light.ttf')
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --font-one: poppins;
+    --font-two: montserrat;
+
+    --color-one: #66614B;
+    --color-two: #194750;
+    --color-three: #04e52a;
+    --color-four: #202D3A;
+}
+
+body {
+    background: var(--color-four);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-one);
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.resalt {
+    color: var(--color-three);
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+    position: relative;
+}
+p {
+    color: #ececec;
+    font-family: var(--font-two);
+}
+.title p {
+    border-radius: 3px;
+    border-left: 3px solid var(--color-three);
+    padding-left: 2rem;
+}
+.flex {
+    display: flex;
+}
+/* globals */
+
+@media screen and (min-width: 976px) {
+    h2 {
+        font-size: 3.5rem;
+        line-height: 3rem;
+    }
+}
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-two);
+    z-index: 100;
+}
+nav .icon img {
+    height:3rem;
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav .menu {
+    display: none;
+}
+nav .menu a {
+    cursor: pointer;
+    color: white;
+    font-family: var(--font-two);
+    padding: 1rem 2rem;
+}
+nav .menu a:hover {
+    background-color: var(--color-four);
+}
+section {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+nav .burguer .menu_burguer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--color-two);
+    height: 100vh;
+    right: 0;
+    color: white;
+    text-align: center;
+}
+nav .burguer .menu_burguer a {
+    width: 100%;
+    padding: 1rem 3rem;
+}
+nav .burguer .menu_burguer a:hover {
+    background-color: #202D3A;
+}
+@media screen and (min-width: 688px) {
+    nav .burguer {
+        display: none;
+    }
+    nav .menu {
+        display: flex;
+    }
+}
+/* header */
+header {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url("./images/bg-header.png");
+    position: relative;
+    overflow: hidden;
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header .container .capy {
+    margin-top: 3rem;
+    margin-bottom: -10rem;
+    width: 250px;
+
+    filter: brightness(50%);
+    z-index: -1;
+}
+header h1 {
+    color: white;
+    font-family: var(--font-one);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+header p {
+    color: white;
+    margin-bottom: 2rem;
+}
+header div:nth-child(1) {
+    position: relative;
+}
+header .link_to_talk {
+    padding: 8px 12px;
+    background-color: var(--color-three);
+    font-family: var(--font-two);
+    text-transform: uppercase;
+    color: var(--color-four);
+    text-align: right;
+    transition: .3s;
+    cursor: pointer;
+    border: 8px double var(--color-three);
+}
+header .link_to_talk:hover {
+    color: var(--color-three);
+    background-color: var(--color-four);
+}
+@media screen and (min-width: 900px) {
+    header .container .capy {
+        /* margin-top: 3rem; */
+        margin-bottom: -10rem;
+        /* width: 100%; */
+        position: absolute;
+        right: 3rem;
+        z-index: -1;
+        filter: brightness(100%);
+    }
+}
+@media screen and (min-width: 976px) {
+    header .container {
+        flex-direction: row;
+    }
+    header .container > div {
+        width: 50%;
+    }
+    header h1 {
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+    header .container .capy {
+        margin-top: 3rem;
+        margin-bottom: -10rem;
+        width: 400px;
+        position: relative;
+        right: 0rem;
+        z-index: 1;
+    }
+}
+
+/* marquee */
+.marquee {
+    background-color: var(--color-two);
+    padding: 1rem 0;
+    overflow: hidden;
+}
+.marquee h2 {
+    font-family: var(--font-one);
+    color: var(--color-three);
+    font-size: 1.5rem;
+}
+.marquee img {
+    margin: 0 1rem;
+}
+.marquee .items {
+    display: flex;
+}
+@media screen and (min-width: 976px) {
+    .marquee h2 {
+        font-size: 2rem;
+    }
+}
+
+/* sketch */
+.sketch {
+    padding-top: 3rem;
+    background-image: url("./images/grid.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.sketch .container {
+    display: flex;
+    flex-direction: column;
+}
+.sketch .container > div:nth-child(1) {
+    width: 100%;
+}
+.sketch .image {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+    margin-top: 2rem;
+}
+.sketch .trello_section .trello {
+    margin-top: 2rem;
+}
+.sketch .trello_ventages {
+    margin-top: 1rem;
+}
+.sketch .trello_ventages > div {
+    margin-top: 1rem;
+}
+.sketch .trello img {
+    position: sticky;
+    top: 4rem;
+}
+.sketch .trello_cards {
+    display: row;
+}
+.sketch .trello_cards .trello_card {
+    background-color: var(--color-two);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.sketch .trello_cards .trello_card h3 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+.sketch .trello_cards .trello_card h4 {
+    color: white;
+    margin-top: 1rem;
+}
+.sketch .agile {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+@media screen and (min-width: 850px) {
+    .sketch p {
+        width: 80%;
+    }
+    .sketch .container > div:nth-child(1) {
+        width: 75%;
+    }
+    .sketch .trello_section {
+        display: flex;
+    }
+    .sketch .trello_cards {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+/* CARDs */
+.cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cards .card {
+    border: 1px solid var(--color-one);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    width: 545px;
+    max-width: 545px;
+}
+.cards .card h3 {
+    font-size: 2rem;
+}
+.cards .card p {
+    color: var(--color-three);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.cards .card .options {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.cards .card span::before {
+    content: ">>";
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-three);
+}
+.cards .card h4 {
+    font-size: 2rem;
+    background: var(--color-two);
+    padding: 8px 12px;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+.cards .card a {
+    background-color: var(--color-three);
+    color: black;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    cursor: crosshair;
+}
+.cards .card a:hover {
+    background-color: greenyellow;
+
+}
+@media screen and (min-width: 1000px) {
+    .cards .card {
+        width: 30%;
+    }
+}
+/* Services */
+.services > a .container {
+    border-bottom: 1px solid #66614B;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.services span {
+    font-size: 4rem;
+    font-family: var(--font-one);
+    color: var(--color-one);
+    position: absolute;
+    z-index: 1;
+    top: -2rem;
+}
+.services h3 {
+    margin-left: 1rem;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+.services p {
+    margin-left: 1.5rem;
+    z-index: 5;
+}
+.services svg {
+    top: 0;
+    right: 1rem;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+.services svg path {
+    stroke: var(--color-one);
+}
+.services > a:hover {
+    background-color: var(--color-two);
+    cursor: crosshair;
+}
+.services > a:hover h3 {
+    color: var(--color-three);
+}
+.services > a:hover span {
+    color: var(--color-four);
+}
+.services > a:hover svg path {
+    stroke: var(--color-three);
+}
+@media screen and (min-width: 976px) {
+    .services > a .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/* works */
+.works {
+    margin-top: 3rem;
+}
+.works h2 {
+    margin-bottom: .5rem;
+}
+.works .titles {
+    margin-bottom: 1rem;
+}
+.tags {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.tags button {
+    color: #b0afaf;
+    border-radius: 2rem;
+    padding: 8px 12px;
+    border: 1px solid #ececec;
+    cursor: pointer;
+    text-align: center;
+}
+.tags button:hover {
+    color: white;
+    border: 1px solid white;
+}
+@media screen and (min-width: 976px) {
+    .works {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .works > div {
+        width: 50%;
+    }
+}
+
+/* IMAGEs */
+.works_img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.works_img img {
+    height: 20rem;
+}
+@media screen and (min-width: 770px) {
+    .works_img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1000px) {
+    .works_img {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+/* contact */
+.contact {
+    position: relative;
+    margin-top: 5rem;
+}
+.contact h2 {
+    margin-bottom: 1rem;
+    z-index: 5;
+}
+.contact .circle_text {
+    position: absolute;
+    right: 1.5rem;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+}
+.contact .circle_text svg path {
+    stroke: var(--color-three);
+}
+.contact .circle_text svg {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transform: rotate(90deg);
+}
+.contact .img_bg {
+    position: absolute;
+    z-index: -1;
+    filter: brightness(.2);
+    left: 0;
+}
+.contact .circle_text img {
+    animation: spin infinite linear 10s;
+    width: 150px;
+}
+.contact .social {
+    display: flex;
+    color: white;
+    font-size: 1rem;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@media screen and (min-width: 976px) {    
+    .contact .circle_text {
+        bottom: 0;
+    }
+    .contact .circle_text img {
+        width: 200px;
+        height: 200px;
+    }
+    .contact .circle_text svg {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        transform: rotate(90deg);
+    }
+}
+
+/* footer */
+footer.footer {
+    position: relative;
+    display: block;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--color-one);
+}
+
+
+
+/* details */
+
+.details header h1 {
+    width: 75%;
+}
+.details .cards .card {
+    background-color: var(--color-four);
+    width: 100%;
+}
+.details form {
+    display: flex;
+    flex-direction: column;
+}
+.details_forms {
+    margin-top: 3rem;
+    position: relative;
+}
+.details_forms .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+.details_forms .options button {
+    margin-top: 2rem;
+    background-color: var(--color-three);
+    color: var(--color-four);
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+.details_forms form label {
+    color: white;
+    margin-top: 1rem;
+}
+.details_forms form input,
+.details_forms form select, 
+.details_forms form textarea {
+    padding: 8px 12px;
+    color: white;
+    background: none;
+    border: 1px solid var(--color-one);
+}
+.details_forms form option {
+    color: black;
+}
+.details_forms form button {
+    background: var(--color-two);
+    margin-top: 1rem;
+    color: white;
+    padding: 8px;
+}
+.details_forms form button:hover {
+    background-color: #256774;
+}
+.details_forms .circle_text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details_forms .circle_text img {
+    position: absolute;
+    animation: spin infinite linear 10s;
+}
+@media screen and (min-width: 690px) {
+    .details_forms .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

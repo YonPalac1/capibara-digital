@@ -1,0 +1,25 @@
+{
+  "name": "appa_script",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@react-email/components": "0.0.19",
+    "@vitejs/plugin-react": "^4.3.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-email": "2.1.4",
+    "react-fast-marquee": "^1.6.4",
+    "react-router-dom": "^6.23.1",
+    "resend": "^3.3.0"
+  }
+}

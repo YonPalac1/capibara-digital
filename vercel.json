@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+        {"source": "/details/:type", "destination": "/index.html"},
+        {"source": "/service/:type", "destination": "/index.html"}
+    ]
+}
