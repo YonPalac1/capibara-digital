@@ -236,7 +236,7 @@ header .link_to_talk:hover {
 
 /* sketch */
 .sketch {
-    padding-top: 3rem;
+    padding-top: 8rem;
     background-image: url("./images/grid.png");
     background-repeat: no-repeat;
     background-position: top right;
