@@ -1,3 +1,3 @@
-# Milanga Digital
+# Capibara Digital
 
-<p>Milanga Digital es una empresa de software dedicada a llevar tu marca, ideas y productos al mundo</p>
+<p>Capibara Digital es una empresa de software dedicada a llevar tu marca, ideas y productos al mundo</p>
