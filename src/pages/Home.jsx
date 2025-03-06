@@ -16,7 +16,7 @@ const Home = () => {
             <div className="title">
                 <h1>Lleva tu negocio al <span className="resalt">siguiente nivel</span> con un sitio <span className="resalt">web</span> profesional<span className="resalt">.</span></h1>
                 <p>Quieres un sitio web moderno y atractivo? ¡Lo podemos hacer!</p>
-                <a className="link_to_talk">agenda una consulta</a>
+                <a href="https://wa.me/+5491139366942?text=%C2%A1Hola!%20Quiero%20hacer%20mi%20web..." className="link_to_talk">¡Escribime!</a>
             </div>
             <div className="capy">
                 <img src={capy} alt="capivara digital desarrollo web"></img>
@@ -28,14 +28,10 @@ const Home = () => {
 
     <section className="sketch">
         <div className="container">
-            <div>
-                <h2>invierte en tu <span className="resalt">éxito</span> elige el plan <span className="resalt">ideal</span>.</h2>
-                <p>Precios que te sorprenderán, resultados que te encantarán.</p>
-            </div>
         </div>
     </section>
 
-    <section className="container">
+    {/* <section className="container">
         <div className="cards" id="plans">
             {
                 PLANS?.map((item, i) => {
@@ -50,7 +46,7 @@ const Home = () => {
                 })
             }
         </div>
-    </section>
+    </section> */}
 
     <section className="services" id="services">
         {

@@ -1,6 +1,10 @@
-import w1 from "../images/w1.webp"
-import w2 from "../images/w2.webp"
-import w3 from "../images/w3.webp"
+import w1 from "../images/img1.png"
+import w2 from "../images/img2.png"
+import w3 from "../images/img3.webp"
+import w4 from "../images/img4.webp"
+import w5 from "../images/img5.png"
+import w6 from "../images/img6.png"
+import w7 from "../images/img7.png"
 
 export const SERVICES_CONSTANT = [{
     i: 1,
@@ -78,14 +82,30 @@ export const PLANS = [{
 },]
 
 export const WORKS = [{
-    type: "diseños",
+    type: "aplicaciones",
     img: w1
 },
 {
-    type: "tiendas",
+    type: "web",
     img: w2
 },
 {
-    type: "web",
+    type: "tiendas",
     img: w3
+},
+{
+    type: "web",
+    img: w4
+},
+{
+    type: "web",
+    img: w5
+},
+{
+    type: "web",
+    img: w6
+},
+{
+    type: "web",
+    img: w7
 }]

@@ -236,10 +236,7 @@ header .link_to_talk:hover {
 
 /* sketch */
 .sketch {
-    padding-top: 8rem;
-    background-image: url("./images/grid.png");
-    background-repeat: no-repeat;
-    background-position: top right;
+    /* padding-top: 8rem; */
 }
 .sketch .container {
     display: flex;
@@ -365,13 +362,13 @@ header .link_to_talk:hover {
     }
 }
 /* Services */
-.services > a .container {
+.services > .container {
     border-bottom: 1px solid #66614B;
     padding: 1rem 0;
-    margin-top: 2rem;
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .services span {
@@ -403,21 +400,21 @@ header .link_to_talk:hover {
 .services svg path {
     stroke: var(--color-one);
 }
-.services > a:hover {
+.services > .container:hover {
     background-color: var(--color-two);
     cursor: crosshair;
 }
-.services > a:hover h3 {
+.services > .container:hover h3 {
     color: var(--color-three);
 }
-.services > a:hover span {
+.services > .container:hover span {
     color: var(--color-four);
 }
-.services > a:hover svg path {
+.services > .container:hover svg path {
     stroke: var(--color-three);
 }
 @media screen and (min-width: 976px) {
-    .services > a .container {
+    .services > .container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;

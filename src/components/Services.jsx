@@ -1,6 +1,5 @@
 const Services = ({n, title, para, type}) => {
-    return <a href={`/service/${type}`}>
-        <div className="container">
+    return <div className="container">
             <span>{n}</span>
             <h3>{title}</h3>
             <p>{para}</p>
@@ -11,6 +10,5 @@ const Services = ({n, title, para, type}) => {
                 </svg>
             </div>
         </div>
-    </a>
 }
 export default Services;
